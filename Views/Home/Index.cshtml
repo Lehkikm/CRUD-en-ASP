@@ -1,0 +1,25 @@
+@model laboratorio.ViewModels.HomeIndexViewModel
+
+@{
+    ViewBag.Title = "Página de inicio";
+}
+
+<h2>Listado de restaurantes</h2>
+
+<button style="margin-top: 20px;">
+    <a asp-action="Crear" style="color:#c4c4c4;">+ Agregar</a>
+</button>
+
+<div style="overflow: hidden; margin-top: 20px">
+    @foreach (var restaurante in Model.Restaurantes)
+    {
+        // El método Html.Partial(["Partial_View"], [Model a pasar]) sirve para escribir vistas parciales dentro de HTML.
+        @Html.Partial("_Summary", restaurante)
+    }
+</div>
+
+<div>
+    @section footer {
+        @Model.MensajeActual
+    }
+</div>

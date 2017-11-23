@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@ViewBag.Title</title>
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<style>
+    a{
+        color:rgb(0, 102, 255);
+        text-decoration: none;
+    }
+
+    .anaranjado{
+        color: rgb(255, 187, 0) !important;
+    }
+
+    h1{
+        color:white;
+        margin:0;
+        padding:0;
+        font-size: 55px;    
+        text-transform: uppercase;
+    }
+
+    h2{
+        margin:0;
+        padding:0;
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+
+    table th{
+        text-align: left;
+    }
+
+    footer{
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 60%;
+    }
+
+    body{
+        background-color: #282c34;
+        color: rgb(197, 197, 197);
+        font-family: Calibri;
+    }
+
+    section{
+        border: 1px solid #c4c4c4;
+        float: left;
+        overflow: hidden;
+        padding: 13px;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        width: 45%;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    /* FORMULARIOS */
+    button{
+        color:#c4c4c4;
+        width: 100px;
+        font-family: "Calibri";
+        text-transform: uppercase;
+        background-color: inherit;
+        border: #c4c4c4 1px solid;
+        padding: 5px;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+
+    button a{
+        color: #c4c4c4;
+    }
+
+    .btn-verde{
+        color: #5ef15e;
+        border: #5ef15e 1px solid;
+    }
+
+    form{
+        width:600px;
+    }
+
+    /*Agregando espacio entre un div y otro*/
+    form div + div{
+        margin-top:1em;
+    }
+
+    .form-group{
+        width:auto;
+        height: auto;
+    }
+
+    label{
+        /*Alineando labels*/
+        color:#c4c4c4;
+        font-family: "Calibri";
+        font-weight: bold;
+        display: inline-block; /*Para alineación*/
+        width: 90px; /*Para alineación con inline-block*/
+        text-align: left;
+    }
+
+    input, textarea, select{
+        color:#c4c4c4;
+        font-size: 16px;
+        font-family: "Calibri";
+        width: 250px;
+        background-color: inherit;
+        border: #c4c4c4 1px solid;
+        padding: 3px 5px; 
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }input:hover, textarea:hover{
+        border: #01A2CB 1px solid;
+    }input:focus, textarea:focus{
+        border: #c4c4c4 1px solid;
+        outline:0px;
+    }
+
+    .input-submit{
+        color:#5ef15e;
+        font-size: 16px;
+        font-family: "Calibri";
+        width: 250px;
+        background-color: inherit;
+        border: #5ef15e 1px solid;
+        box-sizing: border-box;
+        padding: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }.input-submit:hover, textarea:hover{
+        color: #43a843;
+        border: #43a843 1px solid;
+    }.input-submit:focus, textarea:focus{
+        color: #43a843;
+        border: #43a843 1px solid;
+        outline:0px;
+    }
+
+    select option{
+        color: black;
+    }
+
+    /* OTROS */
+    #Contenedor{
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 60%;
+    }
+
+    .Propiedad{
+        color: white;
+    }
+
+    .form-group{
+        margin: .4em 0;
+        margin-bottom: 30px;
+    }
+    
+    .restaurante-detalles{
+        color: rgb(255, 187, 0);
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+</style>
+
+</head>
+<body>
+    <div id="Contenedor">
+        <h1>Consorcio de restaurantes</h1>
+        @RenderBody()
+    </div>
+    <footer>
+        @RenderSection("footer", required:false)
+        <!-- TODO: -->
+        <!-- Todo está bien. Lo único que me falta es que funcione esta instrucción-->
+        <!-- [arroba]await Component.InvokeAsynq("Saludo")-->
+
+    </footer>
+</body>
+</html>
