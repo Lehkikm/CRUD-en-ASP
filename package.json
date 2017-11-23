@@ -1,0 +1,29 @@
+{
+  "name": "laboratorio",
+  "version": "1.0.0",
+  "description": "Un proyecto para ver los fundamentos de ASP .NET Core y MVC. El contenido del mismo es un seguimiento al proyecto OdeToFood de Scott Allen del curso de Pluralsight.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lehkikm/Fundamentos-de-ASP-NET-Core.git"
+  },
+  "keywords": [
+    "MVC",
+    "ASP",
+    ".NET",
+    "Core"
+  ],
+  "author": "Lehkikm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lehkikm/Fundamentos-de-ASP-NET-Core/issues"
+  },
+  "homepage": "https://github.com/Lehkikm/Fundamentos-de-ASP-NET-Core#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2"
+  }
+}
